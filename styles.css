@@ -86,6 +86,7 @@ outline: none;
     touch-action: manipulation;
   }
   
+  
   .selectBtn:hover {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
     transform: translate3d(0, 2px, 0);
@@ -94,6 +95,9 @@ outline: none;
   .selectBtn:focus {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   }
+.firstBtn{
+    margin: 3rem;
+}
 
 .game__containerHeader{
     display: flex;
@@ -121,17 +125,16 @@ color: #333333bb;
 }
 input{
     border-radius: 8px;
-    padding: .8rem;
+    padding: .9rem;
     border: none;
     outline: none;
     margin: 3rem;
 
 }
-input:active{
-    outline:#333333;
-}
+
 input::placeholder{
     opacity: .5;
+    text-align: center;
 }
 .addBtn{
     margin: 1rem 0.5rem;
@@ -150,7 +153,8 @@ outline: none;
 
 .playersTitle{
     font-size: 2.3rem;
-    margin-bottom: 0;
+    margin:0 0 1rem 0;
+    
 }
 footer{
     display: flex;
