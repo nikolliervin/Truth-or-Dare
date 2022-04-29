@@ -1,0 +1,75 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    background-color: #EDEDED;
+}
+header{
+    text-align: center;
+}
+header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+header h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 4rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.game{
+    display: flex;
+    justify-content: center;
+}
+.game__container{
+    background: white;
+    width: 350px;
+    height: 350px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+.selectBtn{
+margin: 1rem 4rem;
+background-color: #333333;
+color: white;
+border-radius: 8px;
+padding: .8rem;
+border: none;
+cursor: pointer;
+outline: none;
+}
+
+.game__containerHeader{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.playerName{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.game__containerBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question{
+font-size: 2rem;
+}
