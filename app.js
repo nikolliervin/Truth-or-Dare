@@ -26,6 +26,24 @@ try {
 //game
 const gamePlayerName=document.getElementById('playerName');
 const question=document.getElementById('truthOrDare');
+const truthButton=document.getElementById('truthBtn');
+const dareButton=document.getElementById('truthBtn');
+const randomButton=document.getElementById('randomBtn');
+
+function randomSelect(array){
+    return array[Math.floor(Math.random() * array.length)];
+};
+
+truthButton.addEventListener('click',()=>{
+    let nameSelected=randomSelect(players);
+    let truthSelected=randomSelect(truths);
+    gamePlayerName.innerHTML=nameSelected;
+    question.innerHTML=truthSelected;
+});
+
+
+
+
 
 
 
