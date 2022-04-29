@@ -41,7 +41,13 @@ truthButton.addEventListener('click',()=>{
     question.innerHTML=truthSelected;
 });
 
+dareButton.addEventListener('click',()=>{
+    let nameSelected=randomSelect(players);
+    let dareSelected=randomSelect(dares);
+    gamePlayerName.innerHTML=nameSelected;
+    question.innerHTML=dareSelected;
 
+});
 
 
 
