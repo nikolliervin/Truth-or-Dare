@@ -49,6 +49,13 @@ dareButton.addEventListener('click',()=>{
 
 });
 
+randomButton.addEventListener('click',()=>{
+    let nameSelected=randomSelect(players);
+    let randomSelected=randomSelect(randoms);
+    gamePlayerName.innerHTML=nameSelected;
+    question.innerHTML=randomSelected;
+});
+
 
 
 
