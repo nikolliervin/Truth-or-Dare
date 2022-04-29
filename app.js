@@ -1,5 +1,3 @@
-//main
-
 const startPlayers=document.getElementById('playersContainer');
 const startAddPlayer=document.getElementById('addPlayer');
 const startInputPlayer=document.getElementById('inputPlayer');
@@ -9,7 +7,6 @@ const startSection=document.getElementById('startContainer')
 const startNewGame=document.getElementById('startNewGame');
 
 let players=[];
-
 
 startAddPlayer.addEventListener('click',()=>{
         players.push((startInputPlayer).value);
@@ -28,9 +25,8 @@ startNewGame.onclick=function(){
     startSection.style.display="block";
     location.reload();
 }
-    
 
-//game
+
 const gamePlayerName=document.getElementById('playerName');
 const question=document.getElementById('truthOrDare');
 const truthButton=document.getElementById('truthBtn');
@@ -58,22 +54,12 @@ dareButton.addEventListener('click',()=>{
 
 });
 
-
-
 randomButton.addEventListener('click',()=>{
     let nameSelected=randomSelect(players);
     let randomSelected=randomSelect(randoms);
     gamePlayerName.innerHTML=nameSelected;
     question.innerHTML=randomSelected;
 });
-
-
-
-
-
-
-
-
 
 const truths=[`When was the last time you lied?`,
 `What's the worst thing you've ever done at work?`,
