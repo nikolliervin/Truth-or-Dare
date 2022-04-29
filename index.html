@@ -14,11 +14,29 @@
     <title>Truth or Dare</title>
   </head>
   <body>
-    <header>
-      <h1>Truth or Dare!</h1>
-      <h2>Pick one:</h2>
-    </header>
-    <section>
+    <section class="main--container" id="startContainer">
+      <header>
+        <h1>Truth or Dare!</h1>
+        <h2>Enter your Names:</h2>
+        <input type="text" name="" id="inputPlayer" placeholder="Player Name" />
+        <button class="selectBtn" id="addPlayer" type="button">Add</button>
+        <p class="playersTitle">Players:</p>
+        <div class="players" id="playersContainer"></div>
+        <button type="button" class="selectBtn" id="startGameBtn">
+          Start Game
+        </button>
+      </header>
+      <footer>
+        <img src="/GitHub-Mark-32px.png" alt="This is the Github Logo" />
+        <a href="https://github.com/nikolliervin">@nikolliervin</a>
+      </footer>
+    </section>
+
+    <section class="container" id="gameSection">
+      <header>
+        <h1>Truth or Dare!</h1>
+        <h2>Pick one:</h2>
+      </header>
       <div class="buttons">
         <button class="selectBtn" id="truthBtn">Truth</button>
         <button class="selectBtn" id="dareBtn">Dare</button>
@@ -38,10 +56,13 @@
           </div>
         </div>
       </div>
-      <a href="main.html" class="selectBtn">New Game</a>
       <footer>
-        <img src="/GitHub-Mark-32px.png" alt="This is the Github Logo" />
-        <a href="https://github.com/nikolliervin">@nikolliervin</a>
+        <button class="selectBtn" id="startNewGame">New Game</button>
+
+        <div class="watermark">
+          <img src="/GitHub-Mark-32px.png" alt="This is the Github Logo" />
+          <a href="https://github.com/nikolliervin">@nikolliervin</a>
+        </div>
       </footer>
     </section>
     <script src="app.js"></script>

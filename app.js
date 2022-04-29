@@ -3,25 +3,32 @@
 const startPlayers=document.getElementById('playersContainer');
 const startAddPlayer=document.getElementById('addPlayer');
 const startInputPlayer=document.getElementById('inputPlayer');
+const startTheGame=document.getElementById('startGameBtn');
+const gameSection=document.getElementById('gameSection');
+const startSection=document.getElementById('startContainer')
+const startNewGame=document.getElementById('startNewGame');
 
 let players=[];
 
-try {
-    startAddPlayer.addEventListener('click',()=>{
+
+startAddPlayer.addEventListener('click',()=>{
         players.push((startInputPlayer).value);
-        
         let playersContainer=document.createElement('p');
         let playersContainerText=document.createTextNode((startInputPlayer).value);
         playersContainer.appendChild(playersContainerText);
         startPlayers.append(playersContainer);
-    
-    
-    })
-} catch (error) {
-    
+    });
+
+startTheGame.onclick = function () {
+      gameSection.style.display = "block";
+      startSection.style.display="none";
+};
+startNewGame.onclick=function(){
+    gameSection.style.display="none";
+    startSection.style.display="block";
+    location.reload();
 }
-
-
+    
 
 //game
 const gamePlayerName=document.getElementById('playerName');
@@ -34,12 +41,14 @@ function randomSelect(array){
     return array[Math.floor(Math.random() * array.length)];
 };
 
+
 truthButton.addEventListener('click',()=>{
-    let nameSelected=randomSelect(players);
-    let truthSelected=randomSelect(truths);
-    gamePlayerName.innerHTML=nameSelected;
-    question.innerHTML=truthSelected;
+        let nameSelected=randomSelect(players);
+        let truthSelected=randomSelect(truths);
+        gamePlayerName.innerHTML=nameSelected;
+        question.innerHTML=truthSelected;
 });
+
 
 dareButton.addEventListener('click',()=>{
     let nameSelected=randomSelect(players);
@@ -49,12 +58,17 @@ dareButton.addEventListener('click',()=>{
 
 });
 
+
+
 randomButton.addEventListener('click',()=>{
     let nameSelected=randomSelect(players);
     let randomSelected=randomSelect(randoms);
     gamePlayerName.innerHTML=nameSelected;
     question.innerHTML=randomSelected;
 });
+
+
+
 
 
 
