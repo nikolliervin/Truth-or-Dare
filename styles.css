@@ -118,6 +118,7 @@ input{
     padding: .8rem;
     border: none;
     outline: none;
+    margin: 3rem;
 
 }
 input:active{
@@ -135,4 +136,13 @@ padding: .8rem;
 border: none;
 cursor: pointer;
 outline: none;
+}
+.players p{
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.playersTitle{
+    font-size: 2.3rem;
+    margin-bottom: 0;
 }
