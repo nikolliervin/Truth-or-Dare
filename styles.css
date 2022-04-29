@@ -109,9 +109,13 @@ outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .question{
 font-size: 2rem;
+text-align: center;
+padding: 2rem;
+color: #333333bb;
 }
 input{
     border-radius: 8px;

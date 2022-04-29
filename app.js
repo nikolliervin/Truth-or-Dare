@@ -27,7 +27,7 @@ try {
 const gamePlayerName=document.getElementById('playerName');
 const question=document.getElementById('truthOrDare');
 const truthButton=document.getElementById('truthBtn');
-const dareButton=document.getElementById('truthBtn');
+const dareButton=document.getElementById('dareBtn');
 const randomButton=document.getElementById('randomBtn');
 
 function randomSelect(array){
