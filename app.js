@@ -8,12 +8,13 @@ const startNewGame=document.getElementById('startNewGame');
 
 let players=[];
 
-startAddPlayer.addEventListener('click',()=>{
+startAddPlayer.addEventListener('click',()=>{       
         players.push((startInputPlayer).value);
         let playersContainer=document.createElement('p');
         let playersContainerText=document.createTextNode((startInputPlayer).value);
         playersContainer.appendChild(playersContainerText);
         startPlayers.append(playersContainer);
+        startInputPlayer.value="";
     });
 
 startTheGame.onclick = function () {
@@ -25,6 +26,8 @@ startNewGame.onclick=function(){
     startSection.style.display="block";
     location.reload();
 }
+
+
 
 
 const gamePlayerName=document.getElementById('playerName');
