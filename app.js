@@ -4,7 +4,7 @@ const startInputPlayer=document.getElementById('inputPlayer');
 const startTheGame=document.getElementById('startGameBtn');
 const gameSection=document.getElementById('gameSection');
 const startSection=document.getElementById('startContainer')
-const startNewGame=document.getElementById('startNewGame');
+const startNewGame=document.getElementById('NewGame');
 
 let players=[];
 
